@@ -16,7 +16,7 @@ function encaminhar() {
 
 function buscaCep(){
     const cep = document.getElementById("cep");
-    const url = `https://viacep.com.br/ws/${cep.value}/json/`;
+    const url = `http://viacep.com.br/ws/${cep.value}/json/`;
     
     const logradouro = document.getElementById("logradouro");
     const bairro = document.getElementById("bairro");
