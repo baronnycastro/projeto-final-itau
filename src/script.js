@@ -6,7 +6,7 @@ function encaminhar() {
     const telefone = document.getElementById("telefone").value
 
     if(nome != "" && cpf != "" && logradouro != "" && numero != "" && telefone != ""){
-    window.location.href = "resposta.html";
+    window.location.href = "./resposta.html";
     }
     else {
         alert("Preencha os campos obrigatórios!")
@@ -23,6 +23,7 @@ function buscaCep(){
     const localidade = document.getElementById("localidade");
     const uf = document.getElementById("uf");
 
+   
     fetch(url, {method: 'GET'})
     .then(
         response => {
