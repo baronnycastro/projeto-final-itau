@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+}
+body {
+ background: #3AAFAB;
+ margin: 0px;
+ padding: 0px;
+}
+
+.cabecalho {
+    padding: 20px;
+    background-color: teal;
+}
+
+h1 {
+   font-size: x-large;
+   text-align: center;
+}
+
+.conteudo{
+    
+    background-color: white;
+    width: 900px;
+    padding: 20px;
+    margin: 10px auto 10px auto;
+    box-shadow: 0px 6px 10px;
+    border-radius: 5px;
+    
+}
+
+fieldset {
+    width: auto;
+    border-radius: 7px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-color: teal;
+    box-shadow: 2px 2px 2px teal;
+}
+label{
+    display: inline-block;
+    width: 70px;
+    text-align: center  ;
+}
+legend {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+input {
+    outline: none;
+    padding: 2px;
+}
+#uf {
+    width: 100px;
+}
+#telefone {
+    width: 300px;
+}
+input[type="text"] {
+    border: none;
+    border-color: white;
+    border-bottom: 2px solid gray;
+    transition: 0.3s all;
+    
+}
+input[type="text"]:focus {
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-color: #3AAFAB;
+}
+
+input[id="nome"] {
+    width: 495px;
+}
+input[id="estado"] {
+    width: 50px;
+}
+
+.botao{
+    border: 0;
+    font-size: 150%;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    text-align: center;
+    background-color:#3AAFAB;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    transition: 0.3s all;
+    
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.2);
+    background-color: #3AAFAB ;
+}
+
+
+.campos{
+    padding: 5px;
+}
+
+.rodape {
+    padding: 20px;
+    background: teal;
+    position: relative;
+}
+
+.rodape2 {
+    text-align: center;
+}
+
+.rodape img {
+    margin-right: auto;
+    margin-left: 50px;
+    width: 35px;
+ 
+}

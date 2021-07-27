@@ -1,0 +1,12 @@
+.imagem {
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 140px;
+    padding-top: 5px;
+     
+}
+
+.rodape {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
