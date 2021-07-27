@@ -19,7 +19,10 @@ function buscaCep(){
                 })
         })
         .catch(erro => {
-            
+            logradouro.value = "";
+            bairro.value = "";
+            localidade.value = "";
+            uf.value = "";
             alert("CEP não localizado")
         })
 }

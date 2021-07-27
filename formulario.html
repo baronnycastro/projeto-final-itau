@@ -44,15 +44,15 @@
             <label for="rua">Endereço</label>
             <input type="text" name="endereco" id="logradouro" autocomplete="off" required placeholder="Seu endereço(obrigatório)">
             <label for="numero">Número</label>
-            <input type="number" name="numero" id="numero" autocomplete="off" placeholder="(obrigatório)" required>
+            <input type="number" name="numero" id="numero" autocomplete="off" placeholder="obrigatório" required>
         </div>    
             <div class="campos">
             <label for="bairro">Bairro</label>
             <input type="text" name="bairro" id="bairro" placeholder="Bairro">
             <label for="localidade">Cidade</label>
-            <input type="text" name="cidade" id="localidade" placeholder="Sua cidade">
+            <input type="text" name="cidade" id="localidade" placeholder="Sua cidade" autocomplete="off">
             <label for="uf">UF</label>
-            <input type="text" name="cidade" id="uf" placeholder="Seu Estado">
+            <input type="text" name="cidade" id="uf" placeholder="Seu Estado" autocomplete="off">
           
         </div>
         <div class="campos">
@@ -60,13 +60,15 @@
         </div>
         <div class="campos">
             <label for="telefone">Celular</label>
-            <input type="text" id="telefone" class="telefone" placeholder="(xx) xxxxx-xxxx (obrigatório)" maxlength="11" required>
+            <input type="text" id="telefone" class="telefone" placeholder="(xx) xxxxx-xxxx (obrigatório)" maxlength="11" autocomplete="off" required>
             <label for="telefone">Telefone Fixo</label>
-            <input type="text" id="telefone" class="telefone" placeholder="(xx) xxxx-xxxx" maxlength="11">
+            <input type="text" id="telefone" class="telefone" placeholder="(xx) xxxx-xxxx" maxlength="10" autocomplete="off">
         </div>  
         <div class="botao">
             <label for="envio"></label>
+            <a href="resposta.html">
             <input type="submit" id="envio" value="Enviar">
+            </a>
     </fieldset>
     
 
