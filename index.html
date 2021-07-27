@@ -1,96 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="style/style.css">
     <title>Formulário de Inscrição</title>
 
 </head>
+
 <body>
     <header class="cabecalho">
         <h1>Formulário de Inscrição</h1>
-       
+
     </header>
     <div class="conteudo">
-    <form method="POST" action="./resposta.html">
-    <fieldset>
-        <legend>Preencha os campos abaixo</legend>
-        <div class="campos">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo(obrigatório)" autocomplete="off" required>
-        </div>
-        <div class="campos">
-            <label for="">CPF</label>
-            <input type="text" name="cpf" id="cpf" autocomplete="off" placeholder="obrigatório" required>
-            <label for="">RG</label>
-            <input type="text" name="RG" id="rg">
-            <label for="">Sexo</label>
-            <select name="Sexo">
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-                <option value="outro">Outro</option>
-            </select>
-        </div>
-      
-        <div class="campos">
-            <label for="cep">Cep</label>
-            <input type="text" name="cep" id="cep" placeholder="Insira o CEP" autocomplete="off" required>
-                <label for="envio"></label>
-                <input type="submit" id="consulta_cep" value="consultar cep" onclick="buscaCep()">
-        </div>
-            <div id="rua" class="campos">   
-            <label for="rua">Endereço</label>
-            <input type="text" name="endereco" id="logradouro" autocomplete="off" required placeholder="Seu endereço(obrigatório)">
-            <label for="numero">Número</label>
-            <input type="number" name="numero" id="numero" autocomplete="off" placeholder="obrigatório" required>
-        </div>    
-            <div class="campos">
-            <label for="bairro">Bairro</label>
-            <input type="text" name="bairro" id="bairro" placeholder="Bairro">
-            <label for="localidade">Cidade</label>
-            <input type="text" name="cidade" id="localidade" placeholder="Sua cidade" autocomplete="off">
-            <label for="uf">UF</label>
-            <input type="text" name="cidade" id="uf" placeholder="Seu Estado" autocomplete="off">
-          
-        </div>
-      
-        <div class="campos">
-            <label for="telefone">Celular</label>
-            <input type="text" id="telefone" class="telefone" placeholder="(xx) xxxxx-xxxx (obrigatório)" maxlength="11" autocomplete="off" required>
-            <label for="telefone">Telefone Fixo</label>
-            <input type="text" id="telefonefixo" class="telefone" placeholder="(xx) xxxx-xxxx" maxlength="10" autocomplete="off">
-        </div>  
-        <div class="botao">
-            <label for="envio"></label>
-            
-            <input type="submit" id="envio" value="Enviar" onclick="encaminhar()">
-            
-    </fieldset>
-    
+        <form method="get" action="/resposta.html">
+            <fieldset>
+                <legend>Preencha os campos abaixo</legend>
+                <div class="campos">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo(obrigatório)"
+                        autocomplete="off" required>
+                </div>
+                <div class="campos">
+                    <label for="">CPF</label>
+                    <input type="text" name="cpf" id="cpf" autocomplete="off" placeholder="obrigatório" required>
+                    <label for="">RG</label>
+                    <input type="text" name="RG" id="rg">
+                    <label for="">Sexo</label>
+                    <select name="Sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="campos">
+                    <label for="cep">Cep</label>
+                    <input type="text" name="cep" id="cep" placeholder="Insira o CEP" autocomplete="off" required>
+                    <label for="envio"></label>
+                    <input type="submit" id="consulta_cep" value="consultar cep" onclick="buscaCep()">
+                </div>
+                <div id="rua" class="campos">
+                    <label for="rua">Endereço</label>
+                    <input type="text" name="endereco" id="logradouro" autocomplete="off" required
+                        placeholder="Seu endereço(obrigatório)">
+                    <label for="numero">Número</label>
+                    <input type="number" name="numero" id="numero" autocomplete="off" placeholder="obrigatório"
+                        required>
+                </div>
+                <div class="campos">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+                    <label for="localidade">Cidade</label>
+                    <input type="text" name="cidade" id="localidade" placeholder="Sua cidade" autocomplete="off">
+                    <label for="uf">UF</label>
+                    <input type="text" name="cidade" id="uf" placeholder="Seu Estado" autocomplete="off">
+
+                </div>
+
+                <div class="campos">
+                    <label for="telefone">Celular</label>
+                    <input type="text" id="telefone" class="telefone" placeholder="(xx) xxxxx-xxxx (obrigatório)"
+                        maxlength="11" autocomplete="off" required>
+                    <label for="telefone">Telefone Fixo</label>
+                    <input type="text" id="telefonefixo" class="telefone" placeholder="(xx) xxxx-xxxx" maxlength="10"
+                        autocomplete="off">
+                </div>
+                <div class="botao">
+                    <label for="envio"></label>
+
+                    <input type="submit" id="envio" value="Enviar" onclick="encaminhar()">
+
+            </fieldset>
+
 
     </div>
     </form>
     </div>
     <footer class="rodape">
-        <div  class="rodape2">
-           <a href="https://github.com/baronnycastro" target="_blank"><img src="img/github.png" alt="imagem do GitHub"></a>
-           <a href="https://www.linkedin.com/in/baronnycastro" target="_blank" ><img src="img/linkedin.png" alt="imagem do Linkedin"></a>
+        <div class="rodape2">
+            <a href="https://github.com/baronnycastro" target="_blank"><img src="img/github.png"
+                    alt="imagem do GitHub"></a>
+            <a href="https://www.linkedin.com/in/baronnycastro" target="_blank"><img src="img/linkedin.png"
+                    alt="imagem do Linkedin"></a>
         </div>
     </footer>
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-      <script src="src/script.js"></script>
-    </body>
+    </script>
+    <script src="src/script.js"></script>
 </body>
+</body>
+
 </html>
