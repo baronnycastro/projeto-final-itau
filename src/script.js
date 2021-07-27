@@ -26,3 +26,8 @@ function buscaCep(){
             alert("CEP não localizado")
         })
 }
+
+
+function encaminhar() {
+    window.location.href = "resposta.html";
+}
