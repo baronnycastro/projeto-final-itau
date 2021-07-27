@@ -1,6 +1,18 @@
 function encaminhar() {
+    const nome = document.getElementById("nome").value
+    const cpf = document.getElementById("cpf").value
+    const logradouro = document.getElementById("logradouro").value
+    const numero = document.getElementById("numero").value
+    const telefone = document.getElementById("telefone").value
+
+    if(nome != "" && cpf != "" && logradouro != "" && numero != "" && telefone != ""){
     window.location.href = "resposta.html";
+    }
+    else {
+        alert("Preencha os campos obrigatórios!")
+    }
 }
+ 
 
 function buscaCep(){
     const cep = document.getElementById("cep");
