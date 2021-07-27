@@ -1,3 +1,7 @@
+function encaminhar() {
+    window.location.href = "resposta.html";
+}
+
 function buscaCep(){
     const cep = document.getElementById("cep");
     const url = `http://viacep.com.br/ws/${cep.value}/json/`;
@@ -28,6 +32,3 @@ function buscaCep(){
 }
 
 
-function encaminhar() {
-    window.location.href = "resposta.html";
-}
